@@ -1,8 +1,8 @@
 
-import { useNavigate } from "react-router-dom"; // <--- glöm inte detta
+import { useNavigate } from "react-router-dom"; 
 
 function Home() {
-  const navigate = useNavigate(); // <--- här, direkt i början av komponenten
+  const navigate = useNavigate();
 
   return (
     <section
