@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
-import { useNavigate } from "react-router-dom";
+
 
 document.body.style.margin = "0";
 document.body.style.fontFamily = "Inter, system-ui, sans-serif";
@@ -33,7 +33,7 @@ document.body.appendChild(overlay);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/nothingtoseehere">
       <App />
     </BrowserRouter>
   </React.StrictMode>
