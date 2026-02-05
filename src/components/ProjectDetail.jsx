@@ -22,7 +22,17 @@ function ProjectDetail({ project, onClose }) {
           width: "90%",
         }}
       >
-        <button onClick={onClose}>
+        <button onClick={onClose}
+        style={{
+            padding: "0.9rem 2rem",
+            borderRadius: "999px",
+            border: "none",
+            background: "linear-gradient(90deg,#ff5ccf,#8b5cf6)",
+            color: "white",
+            fontWeight: "600",
+            cursor: "pointer",
+          }}
+          >
           Close
         </button>
 

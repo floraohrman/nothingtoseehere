@@ -29,7 +29,7 @@ function Navbar() {
           WebkitTextFillColor: "transparent",
         }}
       >
-        Portfolio
+        Flora Öhrman
       </h2>
 
       <div style={{ display: "flex", gap: "2rem" }}>

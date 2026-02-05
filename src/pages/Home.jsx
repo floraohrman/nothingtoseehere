@@ -1,13 +1,9 @@
 
-const heroStyle = {
-  fontSize: "3rem",
-  background: "linear-gradient(90deg,#ff4ecd,#7c3aed)",
-  WebkitBackgroundClip: "text",
-  color: "transparent",
-};
+import { useNavigate } from "react-router-dom"; // <--- glöm inte detta
 
 function Home() {
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // <--- här, direkt i början av komponenten
+
   return (
     <section
       style={{
@@ -45,7 +41,7 @@ function Home() {
         }}
       >
         <button
-          onClick={() => navigate("/projects")}
+          onClick={() => navigate("/projects")} // <--- navigate fungerar nu
           style={{
             padding: "0.9rem 2rem",
             borderRadius: "999px",
@@ -57,20 +53,6 @@ function Home() {
           }}
         >
           View Projects
-        </button>
-
-        <button
-          onClick={() => navigate("/contact")}
-          style={{
-            padding: "0.9rem 2rem",
-            borderRadius: "999px",
-            border: "1px solid rgba(255,255,255,0.2)",
-            background: "transparent",
-            color: "#eae6ff",
-            cursor: "pointer",
-          }}
-        >
-          Contact
         </button>
       </div>
     </section>
