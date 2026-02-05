@@ -7,6 +7,7 @@ const heroStyle = {
 };
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <section
       style={{
@@ -44,6 +45,7 @@ function Home() {
         }}
       >
         <button
+          onClick={() => navigate("/projects")}
           style={{
             padding: "0.9rem 2rem",
             borderRadius: "999px",
@@ -58,6 +60,7 @@ function Home() {
         </button>
 
         <button
+          onClick={() => navigate("/contact")}
           style={{
             padding: "0.9rem 2rem",
             borderRadius: "999px",

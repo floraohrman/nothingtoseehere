@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
+import { useNavigate } from "react-router-dom";
 
 document.body.style.margin = "0";
 document.body.style.fontFamily = "Inter, system-ui, sans-serif";
