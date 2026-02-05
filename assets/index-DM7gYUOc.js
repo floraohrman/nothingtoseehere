@@ -13,4 +13,4 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
   radial-gradient(circle at 80% 30%, #0b1c4d 0%, transparent 45%),
   radial-gradient(circle at 50% 80%, #1a0a2e 0%, transparent 50%),
   #05010a
-`;const Ba=document.createElement("div");Ba.style.position="fixed";Ba.style.inset="0";Ba.style.pointerEvents="none";Ba.style.background="linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6))";Ba.style.zIndex="-1";document.body.appendChild(Ba);s0.createRoot(document.getElementById("root")).render(k.jsx(a0.StrictMode,{children:k.jsx(xv,{children:k.jsx(tg,{})})}));
+`;const Ba=document.createElement("div");Ba.style.position="fixed";Ba.style.inset="0";Ba.style.pointerEvents="none";Ba.style.background="linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6))";Ba.style.zIndex="-1";document.body.appendChild(Ba);s0.createRoot(document.getElementById("root")).render(k.jsx(a0.StrictMode,{children:k.jsx(xv,{basename:"/nothingtoseehere",children:k.jsx(tg,{})})}));
