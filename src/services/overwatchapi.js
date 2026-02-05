@@ -1,21 +1,19 @@
-const BASE_URL = "https://best-overwatch-api.herokuapp.com";
+const BASE_URL = "https://overfast-api.tekrop.fr";
 
-export async function getHeroes() {
-  const response = await fetch(`${BASE_URL}/heroes`);
-
+export async function getPlayerSummary(playerId) {
+  const response = await fetch(`${BASE_URL}/players/${playerId}/stats/summary?platform=pc`);
   if (!response.ok) {
-    throw new Error("Failed to fetch heroes");
+    throw new Error("Failed to fetch player summary");
   }
-
   return response.json();
 }
 
-export async function getHero(tag) {
-  const response = await fetch(`${BASE_URL}/heroes/${tag}`);
-
+export async function getPlayerCareerStats(playerId, gamemode = "competitive") {
+  const response = await fetch(
+    `${BASE_URL}/players/${playerId}/stats/career?platform=pc&gamemode=${gamemode}`
+  );
   if (!response.ok) {
-    throw new Error("Failed to fetch hero");
+    throw new Error("Failed to fetch player career stats");
   }
-
   return response.json();
 }

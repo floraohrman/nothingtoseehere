@@ -5,4 +5,14 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/nothingtoseehere',
+
+  server: {
+    proxy: {
+      "/api": {
+        target: "https://best-overwatch-api.herokuapp.com",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, "")
+      }
+    }
+  }
 })
